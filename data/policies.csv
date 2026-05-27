@@ -1,0 +1,17 @@
+product_category,policy_section,clause_type,clause_text,required_documents,risk_type
+Laptop,Warranty Period,coverage,The laptop is covered under standard warranty for 12 months from the invoice date.,"invoice, serial_number",general
+Laptop,Covered Defects,coverage,"Manufacturing defects, motherboard failure, display failure without external damage, and power failure due to internal hardware fault may be covered.","invoice, serial_number, service_report",general
+Laptop,Exclusions,exclusion,"Physical damage, liquid damage, unauthorized repair, burnt marks due to power surge, and broken screen caused by accidental damage are not covered.","photos, service_report",exclusion
+Laptop,Claim Documents,document,"Customer must provide invoice copy, product serial number, service request number, and product photos if requested.","invoice, serial_number, service_request_number, photos",document
+Mobile Phone,Warranty Period,coverage,Mobile phones are covered under standard warranty for 12 months from invoice date. Accessories may have a shorter warranty period.,"invoice, imei_number",general
+Mobile Phone,Battery Clause,coverage,"Battery issues may be inspected under warranty if there is no swelling, liquid damage, or unauthorized repair evidence.","invoice, imei_number, service_report",general
+Mobile Phone,Exclusions,exclusion,"Cracked display, liquid damage, tampering, unauthorized repair, and damage due to misuse are excluded from warranty coverage.","photos, service_report",exclusion
+Headphones,Return Window,return,Defective headphones can be returned or replaced within 7 days of delivery if original packaging and invoice are available.,"invoice, packaging, delivery_proof",return
+Headphones,Warranty Period,coverage,Headphones are covered for 6 months against manufacturing defects. Physical damage and wire cuts are excluded.,"invoice, serial_number",general
+Appliance,Warranty Period,coverage,Home appliances are covered for 12 months from invoice date for manufacturing defects and functional failures under normal use.,"invoice, serial_number",general
+Appliance,Installation Clause,condition,Warranty may require installation by authorized technician for selected appliances. Damage due to incorrect installation may be excluded.,"installation_report, invoice",condition
+Appliance,Service Delay,service,"If the service request remains unresolved beyond 10 working days, customer may request escalation with service request number and previous communication proof.","service_request_number, communication_proof",service
+General,Refund Policy,refund,Refund is usually applicable only when replacement or repair is not possible and the product issue is verified under policy conditions.,"invoice, service_report",refund
+General,Missing Invoice,document,"If invoice is missing, customer may provide order confirmation, payment proof, or seller invoice reissue request, subject to company acceptance.","order_confirmation, payment_proof",document
+General,Claim Review,service,"If a claim is rejected, customer may request written inspection details and submit supporting evidence for review.","rejection_note, photos, invoice",service
+General,No Fake Claims,safety,"The assistant must not help users create false claims, fake invoices, exaggerated damage descriptions, or misleading statements.",none,safety

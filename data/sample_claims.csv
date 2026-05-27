@@ -1,0 +1,6 @@
+query,expected_clause,expected_decision
+My laptop stopped working after 8 months. I have invoice and serial number. Is it covered?,Warranty Period; Covered Defects; Claim Documents,likely_eligible
+My phone screen cracked after falling. Can I claim warranty?,Mobile Phone Exclusions,likely_not_eligible
+The service center rejected my claim saying physical damage but there is no visible damage. What should I do?,Claim Review; Exclusions,needs_review
+I received defective headphones yesterday. Can I return them?,Headphones Return Window,likely_eligible
+Draft an email for service delay. My appliance repair is pending for 12 working days.,Appliance Service Delay,email_required

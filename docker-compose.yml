@@ -1,0 +1,11 @@
+services:
+  claimmate-app:
+    build: .
+    ports:
+      - "8501:8501"
+    volumes:
+      - ./data:/app/data
+      - ./vector_store:/app/vector_store
+      - ./outputs:/app/outputs
+    environment:
+      - OLLAMA_BASE_URL=http://host.docker.internal:11434

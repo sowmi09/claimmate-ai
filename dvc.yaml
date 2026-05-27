@@ -1,0 +1,18 @@
+stages:
+  build_index:
+    cmd: python build_index.py
+    deps:
+      - data/policies.csv
+      - src/embeddings_hf.py
+      - src/faiss_store.py
+    outs:
+      - vector_store/claimmate.faiss
+      - vector_store/metadata.json
+  evaluate:
+    cmd: python evaluate.py
+    deps:
+      - data/sample_claims.csv
+      - vector_store/claimmate.faiss
+      - vector_store/metadata.json
+    outs:
+      - outputs/evaluation_results.csv
